@@ -1,4 +1,17 @@
-//styles for section home:
+//global styles for all sections:
+
+.section-title h2 {
+	font-size: 52px;
+	line-height: .1em;
+}
+
+.section-title p {
+	color: #aeaeae;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+//styles for header in section home:
 
 #menu-toggle input {
 	display: none;
@@ -19,5 +32,95 @@
 
 	li {
 		display: inline-flex;
+	}
+}
+
+// .page-header {
+// 	margin-bottom: 180px;
+// 	padding-top: 30px;
+// }
+
+.page-header {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+//styles for section home:
+
+.section-home {
+	background: url("../images/section-home-background.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	height: 850px;
+	text-align: center;
+
+	h1 {
+		font-size: 72px;
+		line-height: .1em;
+
+		&.gold {
+			color: #b88b58;
+		}
+	}
+
+	h3 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
+
+//styles for section about:
+
+
+
+//styles for section services:
+
+.section-services {
+	background-color: black;
+	color: white;
+}
+
+
+
+//styles for section projects:
+
+//styles for section team:
+
+.section-team {
+	background: url("../images/section-team-background.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	// margin: 0 auto;
+	text-align: center;
+}
+
+.section-team-card {
+	background-color: #fff;
+	height: 430px;
+	margin: 0 15px;
+	padding-top: 50px;
+	// text-align: center;
+	width: 350px;
+
+	& i {
+		color: #bebebe;
+	}
+}
+
+//styles for section clients:
+
+.section-clients {
+	text-align: center;
+}
+
+//styles for section logos:
+
+.section-logos {
+	background-color: white;
+
+	& img {
+		margin: 50px 45px;
 	}
 }

@@ -13,14 +13,15 @@ $grid-columns: 12;
 }
 
 @mixin font-secondary {
-	font-family: 'Muli', sans-serif;
-}
-
-@mixin font-short-description {
 	font-family: 'Roboto', sans-serif;
 }
 
+@mixin gold-backround-color {
+	background-color: #b88b58;
+}
+
 * {
+	// background-color: #ededed;
 	box-sizing: border-box;
 }
 
@@ -54,6 +55,21 @@ body {
 // .fa-google-plus-square:hover {
 // 	color: #fa8231;
 // }
+
+.long-btn {
+	border-radius: 30px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	height: 45px;
+	width: 194px;
+	@include gold-backround-color;
+	
+	& a {
+		color: white;
+		text-decoration: none;
+	}
+}
 
 .row {
 	overflow: auto;

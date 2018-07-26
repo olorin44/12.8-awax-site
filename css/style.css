@@ -113,6 +113,21 @@ body {
   width: 100%;
 }
 
+.long-btn {
+  border-radius: 30px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  height: 45px;
+  width: 194px;
+  background-color: #b88b58;
+}
+
+.long-btn a {
+  color: white;
+  text-decoration: none;
+}
+
 .row {
   overflow: auto;
 }
@@ -121,6 +136,17 @@ body {
   clear: both;
   content: " ";
   display: table;
+}
+
+.section-title h2 {
+  font-size: 52px;
+  line-height: .1em;
+}
+
+.section-title p {
+  color: #aeaeae;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 #menu-toggle input {
@@ -144,6 +170,74 @@ body {
 .nav-links li {
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.page-header {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-home {
+  background: url("../images/section-home-background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 850px;
+  text-align: center;
+}
+
+.section-home h1 {
+  font-size: 72px;
+  line-height: .1em;
+}
+
+.section-home h1.gold {
+  color: #b88b58;
+}
+
+.section-home h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section-services {
+  background-color: black;
+  color: white;
+}
+
+.section-team {
+  background: url("../images/section-team-background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.section-team-card {
+  background-color: #fff;
+  height: 430px;
+  margin: 0 15px;
+  padding-top: 50px;
+  width: 350px;
+}
+
+.section-team-card i {
+  color: #bebebe;
+}
+
+.section-clients {
+  text-align: center;
+}
+
+.section-logos {
+  background-color: white;
+}
+
+.section-logos img {
+  margin: 50px 45px;
 }
 
 @media (max-width: 1650px) {
