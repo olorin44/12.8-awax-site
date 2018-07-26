@@ -114,16 +114,31 @@ body {
 }
 
 .long-btn {
+  background-color: #b88b58;
   border-radius: 30px;
   color: white;
   font-size: 12px;
   font-weight: bold;
   height: 45px;
   width: 194px;
-  background-color: #b88b58;
 }
 
 .long-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.short-btn {
+  background-color: #b88b58;
+  border-radius: 30px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  height: 45px;
+  width: 129px;
+}
+
+.short-btn a {
   color: white;
   text-decoration: none;
 }
@@ -238,6 +253,52 @@ body {
 
 .section-logos img {
   margin: 50px 45px;
+}
+
+.section-price {
+  background-color: #ededed;
+  text-align: center;
+}
+
+.section-price-card {
+  background-color: white;
+  height: 340px;
+  margin: 0 15px;
+  padding: 10px;
+  width: 250px;
+}
+
+.section-price-table {
+  margin: 45px auto;
+}
+
+.section-premium .section-title {
+  text-align: center;
+}
+
+.section-facts {
+  background-color: black;
+  text-align: center;
+}
+
+.section-facts h2 {
+  color: white;
+}
+
+.section-facts-element h2 {
+  color: #b88b58;
+}
+
+.section-facts-element h3 {
+  color: white;
+}
+
+.section-facts-element p {
+  color: #ededed;
+}
+
+.section-share {
+  color: #aeaeae;
 }
 
 @media (max-width: 1650px) {

@@ -124,3 +124,68 @@
 		margin: 50px 45px;
 	}
 }
+
+//styles for section price:
+
+.section-price {
+	background-color: #ededed;
+	// display: inline-block;
+	text-align: center;
+}
+
+.section-price-card {
+	background-color: white;
+	height: 340px;
+	margin: 0 15px;
+	padding: 10px;
+	width: 250px
+}
+
+.section-price-table {
+	margin: 45px auto;
+}
+
+//styles for section premium:
+
+.section-premium .section-title {
+	text-align: center;
+}
+
+// .section-premium li {
+// 	list-style-type: 
+// }
+
+//styles for section facts:
+
+.section-facts {
+	background-color: black;
+	text-align: center;
+	& h2 {
+		color: white;
+	}
+}
+
+.section-facts-element {
+	& h2 {
+		color: $gold-color;
+	}
+
+	& h3 {
+		color: white;
+	}
+
+	& p {
+		color: #ededed;
+	}
+
+}
+
+//styles for section share:
+
+.section-share {
+	color: #aeaeae;
+}
+
+//styles for section contacts:
+
+//styles for section footer:

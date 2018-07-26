@@ -1,5 +1,7 @@
 $grid-columns: 12;
 
+$gold-color: #b88b58;
+
 @for $i from 1 through $grid-columns {
   .col-#{$i} {
     width: 100% / 12 * $i;
@@ -14,10 +16,6 @@ $grid-columns: 12;
 
 @mixin font-secondary {
 	font-family: 'Roboto', sans-serif;
-}
-
-@mixin gold-backround-color {
-	background-color: #b88b58;
 }
 
 * {
@@ -57,13 +55,28 @@ body {
 // }
 
 .long-btn {
+	background-color: $gold-color;
 	border-radius: 30px;
 	color: white;
 	font-size: 12px;
 	font-weight: bold;
 	height: 45px;
 	width: 194px;
-	@include gold-backround-color;
+	
+	& a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+.short-btn {
+	background-color: $gold-color;
+	border-radius: 30px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	height: 45px;
+	width: 129px;
 	
 	& a {
 		color: white;
