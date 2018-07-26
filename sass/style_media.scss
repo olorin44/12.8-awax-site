@@ -1,0 +1,26 @@
+$grid-columns: 12;
+
+@media (max-width: 1650px) {
+
+	@for $i from 1 through $grid-columns {
+  .col-ms-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+
+
+}
+
+///////////////////////////////
+@media (max-width: 1100px) {
+
+	@for $i from 1 through $grid-columns {
+  .col-s-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+
+
+}
