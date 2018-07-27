@@ -1,7 +1,7 @@
 //global styles for all sections:
 
 .section-title h2 {
-	font-size: 52px;
+	font-size: 48px;
 	line-height: .1em;
 }
 
@@ -28,6 +28,11 @@
 		line-height: 3em;
 		margin-left: 30px;
 		text-decoration: none;
+
+		&:hover, &:active {
+			border-bottom: 5px solid $gold-color;
+			padding-top: 5px;
+		}
 	}
 
 	li {
@@ -35,15 +40,13 @@
 	}
 }
 
-// .page-header {
-// 	margin-bottom: 180px;
-// 	padding-top: 30px;
-// }
-
 .page-header {
 	align-items: center;
+	background-color: black;
 	display: flex;
+	height: 100px;
 	justify-content: space-around;
+	margin-bottom: 300px;
 }
 
 //styles for section home:
@@ -61,7 +64,7 @@
 		line-height: .1em;
 
 		&.gold {
-			color: #b88b58;
+			color: $gold-color;
 		}
 	}
 
@@ -73,18 +76,33 @@
 
 //styles for section about:
 
+.section-about {
+	text-align: center;
+}
 
+.section-about-video {
+	box-shadow: 10px 10px 5px grey;
+	float: right;
+}
 
 //styles for section services:
 
 .section-services {
 	background-color: black;
 	color: white;
+	text-align: center;
 }
 
-
-
 //styles for section projects:
+
+.section-projects {
+	padding: 20px;
+	text-align: center;
+}
+
+.section-projects-slider a {
+	color: black;
+}
 
 //styles for section team:
 
@@ -92,7 +110,7 @@
 	background: url("../images/section-team-background.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
-	// margin: 0 auto;
+	padding: 20px;
 	text-align: center;
 }
 
@@ -101,7 +119,6 @@
 	height: 430px;
 	margin: 0 15px;
 	padding-top: 50px;
-	// text-align: center;
 	width: 350px;
 
 	& i {
@@ -129,7 +146,6 @@
 
 .section-price {
 	background-color: #ededed;
-	// display: inline-block;
 	text-align: center;
 }
 
@@ -151,10 +167,6 @@
 	text-align: center;
 }
 
-// .section-premium li {
-// 	list-style-type: 
-// }
-
 //styles for section facts:
 
 .section-facts {
@@ -168,6 +180,7 @@
 .section-facts-element {
 	& h2 {
 		color: $gold-color;
+		font-size: 48px;
 	}
 
 	& h3 {
@@ -183,9 +196,114 @@
 //styles for section share:
 
 .section-share {
+	background-color: #fefefe;
 	color: #aeaeae;
+	text-align: center;
+	margin: 30px 0;
+
+	& .fa-twitter-square {
+		color: #34c5f0;
+	}
+
+	& .fa-linkedin {
+		color: #127cb4;
+	}
+
+	& .fa-facebook-square {
+		color: #336297;
+	}
+
+	& .fa-google-plus-square {
+		color: #e74237;
+	}
+
+	& .fa-pinterest-square {
+		color: #b71c29;
+	}
+
+	& i:not(.fa-share-alt):hover {
+		box-shadow: 5px 5px 5px $gold-color;
+	}
 }
 
 //styles for section contacts:
 
+#form-name, #form-email {
+	margin-bottom: 20px;
+	width: 25%;
+}
+
+#form-subject, #form-message {
+	width: 50%;
+}
+
+#form-message {
+	margin-top: 50px;
+}
+
+[id^="form-"] {
+	background-color: #f7f7f7;
+	border: none;
+	border-bottom: 2px solid grey;
+}
+
+.section-contacts {
+	background-color: #f7f7f7;
+	padding: 20px;
+	text-align: center;
+
+	& form {
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+	& img {
+		margin: 10px auto;
+	}
+}
+
 //styles for section footer:
+
+#footer-email {
+	background-color: #373737;
+	border: none;
+	border-bottom: 2px solid grey;
+	color: white;
+	font-weight: bold;
+}
+
+.section-footer {
+	background-color: black;
+	color: grey;
+	padding-top: 30px;
+	text-align: center;
+
+	& form {
+		background-color: #373737;
+		height: 200px;
+		padding-top: 50px;
+		width: 350px;
+	}
+
+	& h5:hover {
+		color: white;
+	}
+	
+	& i {
+		margin-top: 30px;
+		margin-bottom: 140px;
+	}
+
+	& i:active {
+		box-shadow: 5px 5px 5px $gold-color;
+	}
+
+	& i:hover {
+		color: $gold-color;
+	}
+
+	& p {
+		padding: 10px;
+		text-align: left;
+	}
+}

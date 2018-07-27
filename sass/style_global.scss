@@ -19,7 +19,6 @@ $gold-color: #b88b58;
 }
 
 * {
-	// background-color: #ededed;
 	box-sizing: border-box;
 }
 
@@ -28,7 +27,7 @@ body {
 	margin: 0;
 }
 
-.col-4 {
+.col-2, .col-3, .col-4, .col-6 {
 		float: left;
 	}
 
@@ -38,22 +37,6 @@ body {
 	width: 100%;
 }
 
-// .fa-twitter-square:hover {
-// 	color: #25CCF7;
-// }
-
-// .fa-facebook-square:hover {
-// 	color: #4a69bd;
-// }
-
-// .fa-pinterest-square:hover {
-// 	color: #d63031;
-// }
-
-// .fa-google-plus-square:hover {
-// 	color: #fa8231;
-// }
-
 .long-btn {
 	background-color: $gold-color;
 	border-radius: 30px;
@@ -61,11 +44,35 @@ body {
 	font-size: 12px;
 	font-weight: bold;
 	height: 45px;
+	margin: 20px 0;
 	width: 194px;
 	
 	& a {
 		color: white;
 		text-decoration: none;
+	}
+}
+
+.pagination {
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-top: 140px;
+}
+
+.pagination a {
+	border: 2px solid $gold-color;
+	border-radius: 50%;
+	margin: 0 10px;
+	padding: 1px 10px;
+	text-decoration: none;
+	transition: background-color .3s;
+
+	&:hover {
+		background-color: $gold-color;
+	}
+
+	&:active {
+		padding: 8px 16px;
 	}
 }
 
