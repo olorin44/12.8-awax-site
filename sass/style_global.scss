@@ -23,11 +23,13 @@ $gold-color: #b88b58;
 }
 
 body {
+	background-color: #ededed;
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
+	padding: 0;
 }
 
-.col-2, .col-3, .col-4, .col-6 {
+[class^="col-"] {
 		float: left;
 	}
 
@@ -46,6 +48,21 @@ body {
 	height: 45px;
 	margin: 20px 0;
 	width: 194px;
+	@include font-secondary;
+
+	&:hover {
+		background-color: white;
+		color: $gold-color;
+		cursor: pointer;
+		border: 1px solid $gold-color;
+		transition: .2s;
+	}
+
+	&:active {
+		background-color: $gold-color;
+		color: white;
+		transition: .2s;
+	}
 	
 	& a {
 		color: white;
@@ -69,6 +86,7 @@ body {
 
 	&:hover {
 		background-color: $gold-color;
+		transition: .3s;
 	}
 
 	&:active {
@@ -77,13 +95,28 @@ body {
 }
 
 .short-btn {
-	background-color: $gold-color;
+	background-color: black;
 	border-radius: 30px;
 	color: white;
 	font-size: 12px;
 	font-weight: bold;
 	height: 45px;
 	width: 129px;
+	@include font-secondary;
+	
+	&:hover {
+		background-color: white;
+		color: $gold-color;
+		cursor: pointer;
+		border: 1px solid $gold-color;
+		transition: .2s;
+	}
+
+	&:active {
+		background-color: $gold-color;
+		color: white;
+		transition: .2s;
+	}
 	
 	& a {
 		color: white;
