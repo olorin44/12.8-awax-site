@@ -1,0 +1,23 @@
+//styles for section about:
+
+.section-about {
+	text-align: center;
+
+	& button {
+		float: left;
+		margin-left: 10px;
+	}
+
+	& h6 {
+		font-size: 14px;
+		font-weight: normal;
+		padding: 15px;
+		text-align: left;
+	}
+}
+
+.section-about-video {
+	box-shadow: 10px 10px 5px grey;
+	margin-top: 30px;
+	float: right;
+}
