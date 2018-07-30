@@ -1,0 +1,36 @@
+//styles for section clients:
+
+.section-clients {
+	text-align: center;
+
+	& h5 {
+		margin-bottom: 50px;
+	}
+
+	& .quote {
+		margin: 0 auto;
+	}
+
+	& img {
+		margin-top: 30px;
+	}
+
+	& q {
+		color: #aeaeae;
+		font-size: 14px;
+		quotes: "\201C" "\201D" "\2018" "\2019";
+
+		&:before {
+			content: open-quote;
+			color: gray;
+			font-size: 6em;
+			line-height: .5em;
+			position: relative;
+			left: 45%;
+		}
+
+		q:after {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,106 @@
+//styles for section contacts:
+
+.fa-chevron-up {
+	background-color: $gold-color;
+	border-radius: 50%;
+	color: white;
+	float: left;
+	font-size: 40px;
+	height: 65px;
+	line-height: 65px;
+	margin-top: 90px;
+	padding: 1%;
+	text-align: center;
+	width: 65px;
+
+	&:hover {
+		background-color: white;
+		border: 2px solid $gold-color;
+		color: $gold-color;
+	}
+
+	&:active {
+		box-shadow: 4px 2px 4px $gold-color;
+	}
+}
+
+#form-name, #form-email {
+	margin: 40px 20px 40px 20px;
+	width: 23%;
+}
+
+#form-subject, #form-message {
+	width: 50%;
+}
+
+#form-message {
+	margin-top: 60px;
+}
+
+[id^="form-"] {
+	background-color: #f7f7f7;
+	border: none;
+	border-bottom: 2px solid #aeaeae;
+}
+
+.section-contacts {
+	background-color: #f7f7f7;
+	padding: 60px;
+	text-align: center;
+
+	& button {
+		margin-top: 40px;
+	}
+
+	& h2 {
+		font-size: 30px;
+	}
+
+	& form {
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+	& img {
+		margin: 10px auto;
+	}
+}
+
+.section-contacts-map {
+	background-image: url("../images/section-contacts-map.jpg");
+	background-size: cover;
+	height: 500px;
+}
+
+.section-contacts-map-info {
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 5%;
+	padding: 20px;
+
+	& .fas, .far {
+		border: 1px solid;
+		border-radius: 50%;
+		background-color: #bebebe;
+		color: white;
+		cursor: pointer;
+		float: right;
+		height: 40px;
+		margin: 5% 20% 0 0;
+		padding: 5%;
+		text-align: center;
+		width: 40px;
+
+		&:hover {
+			background-color: white;
+			border: 1px solid #bebebe;
+			color: #bebebe;
+			transition: .3s;
+		}
+	}
+
+	p {
+		color: gray;
+		text-align: left;
+	}
+}

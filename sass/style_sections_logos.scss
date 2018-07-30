@@ -1,0 +1,14 @@
+//styles for section logos:
+
+.section-logos {
+	background-color: white;
+	padding: 30px;
+	
+	& img {
+		margin-top: 20px;
+	}
+
+	& img:first-of-type {
+		margin-left: 20%;
+	}
+}

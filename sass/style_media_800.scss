@@ -1,105 +1,3 @@
-// for width less than 1400px:
-@media (max-width: 1400px) {
-
-	@for $i from 1 through $grid-columns {
-  .col-ms-#{$i} {
-    width: 100% / 12 * $i;
-  }
-}
-
-//styles for header:
-
-#menu-toggle {
-  display: block;
-  left: 10px;
-  position: fixed;
-  top: 10px;
-  user-select: none;
-  z-index: 1;
-}
-
-#menu-toggle input {
-	cursor: pointer;
-  	display: block;
-  	height: 32px;
-  	opacity: 0;
-  	position: absolute;
-  	width: 40px;
-  	z-index: 2;
-}
-
-#menu-toggle span {
-	background: grey;
-  	border-radius: 3px;
-  	display: block;
-  	height: 5px;
-  	margin-bottom: 5px;
-  	position: relative;
-  	width: 30px;
-  	z-index: 1;
-}
-
-#menu-toggle input:checked ~ ul {
-  transform: none;
-}
-
-#menu {
-	background: rgba(0, 0, 0, 0.8);
-	border-radius: 2%;
-	margin: -100px 0 0 -50px;
-	font-size: 1em;
-	line-height: 1.8em;
-	padding: 50px;
-	padding-top: 120px;
-	position: absolute;
-	text-align: left;
-	transform: translate(-100%, 0);
-	transition: transform 0.2s;
-	width: 240px;
-}
-
-.nav-links {
-
-	a {
-		color: grey;
-		font-size: 0.9em;
-		line-height: 1em;
-		margin: 5%;
-
-		&:hover {
-			color: #fff;
-		}
-	}
-
-	li {
-		display: block;
-	}
-}
-
-.page-header {
-	margin-bottom: 100px;
-	padding-top: 15px;
-}
-
-//styles for section team:
-.section-team-card {
-	margin: 0;
-	width: 100%;
-}
-
-// styles for section price:
-
-.section-price-card {
-	margin-bottom: 20px;
-	margin-left: 0;
-}
-
-.section-price-table {
-	// margin: 0;
-}
-
-}
-
 // for width less than 800px:
 
 @media (max-width: 800px) {
@@ -161,6 +59,10 @@
 	width: 240px;
 }
 
+.company {
+	margin: 0 auto;
+}
+
 .nav-links {
 
 	a {
@@ -210,6 +112,11 @@
 		font-size: 20px;
 	}
 }
+
+.section-about-video video {
+	width: 100%;
+}
+
 // styles for section projects:
 
 .section-projects {
@@ -234,8 +141,15 @@
 }
 
 .section-team-card {
-	margin: 0;
+	border-radius: 5px;
+	margin: 10px 0 10px 0;
+	height: 100%;
 	width: 100%;
+
+	& i {
+		margin: 10px 0 20px 0;
+		padding: .5%;
+	}
 }
 
 // styles for section clients:
@@ -289,13 +203,17 @@
 
 .section-share {
 	& .container {
-		margin-left: 20%;
-		text-align: left;
+		text-align: center;
 		width: 100%;
 	}
 }
 
 //styles for section contacst:
+
+#form-name, #form-email {
+	margin: 30px 15px 30px 15px;
+	width: 22%;
+}
 
 .section-contacts h2 {
 	font-size: 22px;
@@ -313,8 +231,14 @@
 
 //styles for section footer:
 
-.section-footer form {
-	width: 100%;
+.section-footer {
+	& i {
+		padding: .5%;
+	}
+
+	& form {
+		width: 100%;
+	}
 }
 
 }

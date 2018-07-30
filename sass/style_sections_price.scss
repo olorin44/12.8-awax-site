@@ -1,0 +1,30 @@
+//styles for section price:
+
+.section-price {
+	background-color: #ededed;
+	margin: 40px 0 80px 0;
+	text-align: center;
+}
+
+.section-price-card {
+	background-color: white;
+	margin-right: 2%;
+	padding: 30px;
+	width: 280px;
+
+	p {
+		line-height: .2em;
+	}
+
+	& h6, p {
+		color: gray;
+	}
+}
+
+.section-price-card:first-of-type {
+	margin-left: 7%;
+}
+
+.section-price-table {
+	margin: 45px auto;
+}
