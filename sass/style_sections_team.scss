@@ -1,0 +1,45 @@
+//styles for section team:
+
+.section-team {
+	background: url("../images/section-team-background.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 20px;
+	text-align: center;
+
+	& .section-title > h2 {
+		color: white;
+	}
+}
+
+.section-team-card {
+	background-color: #fff;
+	height: 430px;
+	margin-left: 6%;
+	margin-top: 30px;
+	padding-top: 50px;
+	width: 350px;
+
+	& i {
+		background-color: #bebebe;
+		border: 5px solid #bebebe;
+		border-radius: 50%;
+		color: white;
+		height: 33px;
+		padding: 5%;
+		width: 33px;
+	}
+
+	& i:hover {
+		background-color: $gold-color;
+		border: 5px solid $gold-color;
+		cursor: pointer;
+		transition: .3s;
+	}
+
+	& i:active {
+		background-color: white;
+		color: $gold-color;
+		transition: .3s;
+	}
+}

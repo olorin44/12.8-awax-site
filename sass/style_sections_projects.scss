@@ -1,0 +1,71 @@
+//styles for section projects:
+
+.section-projects {
+	background-color: #f7f7f7;
+	padding: 20px;
+	text-align: center;
+}
+
+.section-projects-slider .nav-links {
+	background-color: #ededed;
+	border: 1px solid gray;
+	border-radius: 20px;
+	margin: 30px auto;
+	padding: 0;
+	width: 700px;
+
+	& li {
+	  	border-right: 1px solid gray;
+	}
+	
+	& a {
+		color: black;
+		height: 55px;
+		line-height: 55px;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0 auto;
+		padding: 0 22px 0 18px;
+		text-decoration: none;
+		width: 90%;
+
+		&:hover {
+			border-bottom: 5px solid $gold-color;
+			color: black;
+		}
+	}
+
+	& li:last-child {
+		border-right: none;
+	}
+}
+
+.section-projects-gallery-box {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.section-projects-gallery-box img {
+	background-size: cover;
+	height: 100%;
+	object-fit: cover;
+	padding: 10px;
+	width: 100%;
+}
+
+.section-projects-gallery-layer {
+	border-radius: 5px;
+	color: white;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	transition: 0.3s;
+	width: 100%;
+	
+	&:hover {
+		background-color: rgba(0,0,0,0.5);
+		opacity: 1;
+	}
+}

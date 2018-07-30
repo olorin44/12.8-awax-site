@@ -1,0 +1,28 @@
+//styles for section services:
+
+.section-services {
+	background-color: black;
+	color: white;
+	height: 100%;
+	padding-bottom: 40px;
+	text-align: center;
+	width: 100%;
+}
+
+.section-services-items {
+	border-left: 2px solid #bebebe;
+	border-right: 2px solid #bebebe;
+	margin-top: 40px;
+
+	& div {
+		height: 230px;
+	}
+
+	& p {
+		color: gray;
+	}
+}
+
+.section-services-column-line {
+	border-right: 2px solid #bebebe;
+}

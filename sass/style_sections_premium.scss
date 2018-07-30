@@ -1,0 +1,36 @@
+//styles for section premium:
+
+.section-premium {
+	background-color: white;
+	text-align: center;
+
+	& p {
+		color: gray;
+	}
+
+	& button {
+		margin-bottom: 50px;
+	}
+}
+
+.section-premium-description h4 {
+	margin-left: 20px;
+	text-align: left;
+}
+
+.section-premium-description p {
+	margin-left: 20px;
+	text-align: left;
+}
+
+.section-premium-icon {
+	margin-top: 20px;
+}
+
+.section-premium-content {
+	border-bottom: 1px solid #ededed;
+}
+
+.section-premium .section-title {
+	text-align: center;
+}
