@@ -4,7 +4,7 @@
 	background: url("../images/section-team-background.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding: 20px;
+	padding: 45px 0 40px 0;
 	text-align: center;
 
 	& .section-title > h2 {
@@ -14,11 +14,17 @@
 
 .section-team-card {
 	background-color: #fff;
+	display: inline-block;
 	height: 430px;
-	margin-left: 6%;
-	margin-top: 30px;
+	margin: 30px 15px 0 15px;
 	padding-top: 50px;
 	width: 350px;
+
+	& h3 {
+		font-size: 21px;
+		margin-top: 30px;
+		margin-bottom: 5px;
+	}
 
 	& i {
 		background-color: #bebebe;
@@ -26,7 +32,7 @@
 		border-radius: 50%;
 		color: white;
 		height: 33px;
-		padding: 5%;
+		padding: 1%;
 		width: 33px;
 	}
 
@@ -42,4 +48,13 @@
 		color: $gold-color;
 		transition: .3s;
 	}
+
+	& p {
+		font-size: 14px;
+	}
+}
+
+.section-team .pagination {
+	display: block;
+	margin-top: 60px;
 }

@@ -33,7 +33,7 @@
 	display: flex;
 	height: 100px;
 	justify-content: space-around;
-	margin-bottom: 300px;
+	margin-bottom: 270px;
 }
 
 //styles for section home:
@@ -46,7 +46,7 @@
 	font-size: 40px;
 	height: 65px;
 	line-height: 65px;
-	margin-top: 155px;
+	margin-top: 185px;
 	padding: 10px;
 	transform: rotate(-30deg);
 	width: 65px;
@@ -85,6 +85,7 @@
 	}
 
 	.pagination {
+		margin-top: 160px;
 		margin-left: 55px;
 	}
 }

@@ -14,10 +14,6 @@ $gold-color: #b88b58;
 	}
 }
 
-@mixin font-secondary {
-	font-family: 'Roboto', sans-serif;
-}
-
 * {
 	box-sizing: border-box;
 }
@@ -48,7 +44,6 @@ body {
 	height: 45px;
 	margin: 20px 0;
 	width: 194px;
-	@include font-secondary;
 
 	&:hover {
 		background-color: white;
@@ -72,8 +67,6 @@ body {
 
 .pagination {
 	display: inline-block;
-	margin-bottom: 20px;
-	margin-top: 140px;
 }
 
 .pagination a {
@@ -102,7 +95,6 @@ body {
 	font-weight: bold;
 	height: 45px;
 	width: 129px;
-	@include font-secondary;
 	
 	&:hover {
 		background-color: white;
