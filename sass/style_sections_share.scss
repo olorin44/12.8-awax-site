@@ -3,10 +3,11 @@
 .section-share {
 	background-color: #fefefe;
 	color: #aeaeae;
+	margin-top: -30px;
 	text-align: center;
 
-	& .fa-share-alt {
-		margin-top: 60px;
+	& i {
+		margin-left: 30px;
 	}
 
 	& i:not(.fa-share-alt) {
@@ -14,9 +15,9 @@
 		color: white;
 		cursor: pointer;
 		height: 33px;
-		margin-bottom: 80px;
-		margin-top: 50px;
-		padding: 2%;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		padding: .5%;
 		width: 33px;
 	}
 
@@ -54,8 +55,4 @@
 		background-color: #b71c29;
 		border: 5px solid #b71c29;
 	}
-}
-
-.section-share > .container {
-	width: 50%;
 }

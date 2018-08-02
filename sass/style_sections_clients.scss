@@ -2,9 +2,16 @@
 
 .section-clients {
 	text-align: center;
+	padding: 45px 0 30px 0;
+
+	& h4 {
+		font-size: 24px;
+		line-height: .1em;
+	}
 
 	& h5 {
-		margin-bottom: 50px;
+		font-size: 18px;
+		line-height: .1em;
 	}
 
 	& .quote {
@@ -12,7 +19,7 @@
 	}
 
 	& img {
-		margin-top: 30px;
+		margin-top: 60px;
 	}
 
 	& q {
@@ -24,13 +31,18 @@
 			content: open-quote;
 			color: gray;
 			font-size: 6em;
+			left: 48%;
 			line-height: .5em;
 			position: relative;
-			left: 45%;
+			top: 15px;
 		}
 
 		q:after {
 			display: none;
 		}
+	}
+
+	& .pagination {
+		margin: 80px 0 0 20px;
 	}
 }
