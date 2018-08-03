@@ -45,34 +45,40 @@
 	}
 }
 
-.section-projects-gallery-box {
-	height: 100%;
-	position: relative;
-	width: 100%;
+.section-projects-gallery {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1250px;
+	margin: 40px auto 10px;
 }
 
-.section-projects-gallery-box img {
-	background-size: cover;
-	object-fit: cover;
-	padding: 15px;
-	width: 255px;
+.section-projects-gallery-box {
+	position: relative;
+	margin-bottom: 30px;
 }
 
 .section-projects-gallery-layer {
-	border-radius: 5px;
-	color: white;
-	height: 90%;
+	align-items: center;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	height: 166px;
 	opacity: 0;
+	overflow: hidden;
 	position: absolute;
-	padding: 10%;
-	right: 14%;
-	text-align: center;
-	top: 4%;
+	top: 0;
 	transition: 0.3s;
-	width: 250px;
+	width: 257px;
 	
+	& h3, & p {
+		color: white;
+	}
+
 	&:hover {
-		background-color: rgba(0,0,0,0.5);
 		opacity: 1;
 	}
 }

@@ -147,24 +147,26 @@ body {
 
 .pagination {
   display: inline-block;
+  margin-right: 2%;
 }
 
-.pagination a {
+.pagination li {
   border: 2px solid #b88b58;
   border-radius: 50%;
+  display: inline-block;
+  list-style-type: none;
   margin: 0 10px;
-  padding: .1px 10px;
-  text-decoration: none;
+  padding: 5px;
   transition: background-color .3s;
 }
 
-.pagination a:hover {
+.pagination li:hover {
   background-color: #b88b58;
   transition: .3s;
 }
 
-.pagination a:active {
-  padding: 8px 18px;
+.pagination li:active {
+  transform: scale(2);
 }
 
 .short-btn {
@@ -417,36 +419,49 @@ body {
   border-right: none;
 }
 
-.section-projects-gallery-box {
-  height: 100%;
-  position: relative;
-  width: 100%;
+.section-projects-gallery {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1250px;
+  margin: 40px auto 10px;
 }
 
-.section-projects-gallery-box img {
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 15px;
-  width: 255px;
+.section-projects-gallery-box {
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .section-projects-gallery-layer {
-  border-radius: 5px;
-  color: white;
-  height: 90%;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 0;
+  height: 166px;
   opacity: 0;
+  overflow: hidden;
   position: absolute;
-  padding: 10%;
-  right: 14%;
-  text-align: center;
-  top: 4%;
+  top: 0;
   transition: 0.3s;
-  width: 250px;
+  width: 257px;
+}
+
+.section-projects-gallery-layer h3, .section-projects-gallery-layer p {
+  color: white;
 }
 
 .section-projects-gallery-layer:hover {
-  background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
 
@@ -553,7 +568,7 @@ body {
 }
 
 .section-clients .pagination {
-  margin: 80px 0 0 20px;
+  margin: 80px 0 10px 20px;
 }
 
 .section-logos {
@@ -621,6 +636,14 @@ body {
   margin-bottom: 50px;
 }
 
+.section-premium .pagination {
+  margin-top: 20px;
+}
+
+.section-premium-content {
+  border-bottom: 1px solid #ededed;
+}
+
 .section-premium-description h4 {
   margin-left: 20px;
   text-align: left;
@@ -633,10 +656,6 @@ body {
 
 .section-premium-icon {
   margin-top: 20px;
-}
-
-.section-premium-content {
-  border-bottom: 1px solid #ededed;
 }
 
 .section-premium .section-title {
@@ -859,6 +878,7 @@ body {
 .section-footer form {
   background-color: #373737;
   height: 200px;
+  margin-left: 50px;
   padding-top: 50px;
   width: 350px;
 }
@@ -876,7 +896,7 @@ body {
   height: 33px;
   margin-top: 30px;
   margin-bottom: 140px;
-  padding: 1%;
+  padding-top: 1%;
   width: 33px;
 }
 
@@ -897,7 +917,7 @@ body {
   text-align: left;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .col-ms-1 {
     width: 8.33333%;
   }
@@ -1005,6 +1025,9 @@ body {
     position: absolute;
     right: 50px;
   }
+  .section-projects-slider .nav-links li {
+    border: 0;
+  }
   .section-team h2 {
     font-size: 24px;
   }
@@ -1039,8 +1062,15 @@ body {
   .section-contacts-map .fas:not(.fa-chevron-up), .section-contacts-map .far {
     padding-top: 12%;
   }
+  .section-footer {
+    height: 550px;
+  }
   .section-footer i {
-    padding: 2%;
+    padding: 1%;
+  }
+  .section-footer form {
+    margin-left: 5%;
+    width: 300px;
   }
 }
 
@@ -1147,6 +1177,9 @@ body {
     margin-bottom: 100px;
     padding-top: 15px;
   }
+  .section-home .pagination {
+    margin: 0;
+  }
   .fa-phone-volume {
     position: absolute;
     right: 20px;
@@ -1234,11 +1267,17 @@ body {
   .section-contacts-map .fas:not(.fa-chevron-up), .section-contacts-map .far {
     padding-top: 10%;
   }
+  .section-footer {
+    height: 800px;
+  }
   .section-footer i {
+    margin: 20px 10px 20px 10px;
     padding: .5%;
   }
   .section-footer form {
-    width: 100%;
+    border-radius: 10px;
+    height: 95%;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
