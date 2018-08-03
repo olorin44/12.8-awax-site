@@ -11,6 +11,14 @@
 	& button {
 		margin-bottom: 50px;
 	}
+
+	& .pagination {
+		margin-top: 20px;
+	}
+}
+
+.section-premium-content {
+	border-bottom: 1px solid #ededed;
 }
 
 .section-premium-description h4 {
@@ -25,10 +33,6 @@
 
 .section-premium-icon {
 	margin-top: 20px;
-}
-
-.section-premium-content {
-	border-bottom: 1px solid #ededed;
 }
 
 .section-premium .section-title {

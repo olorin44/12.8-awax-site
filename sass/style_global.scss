@@ -67,14 +67,16 @@ body {
 
 .pagination {
 	display: inline-block;
+	margin-right: 2%;
 }
 
-.pagination a {
+.pagination li {
 	border: 2px solid $gold-color;
 	border-radius: 50%;
+	display: inline-block;
+	list-style-type: none;
 	margin: 0 10px;
-	padding: .1px 10px;
-	text-decoration: none;
+	padding: 5px;
 	transition: background-color .3s;
 
 	&:hover {
@@ -83,7 +85,7 @@ body {
 	}
 
 	&:active {
-		padding: 8px 18px;
+		transform: scale(2);
 	}
 }
 
