@@ -124,7 +124,7 @@
 }
 
 .section-about-video video {
-	width: 100%;
+	width: 90%;
 }
 
 // styles for section projects:
@@ -180,6 +180,10 @@
 }
 
 // styles for section price:
+
+.section-price-card {
+	margin-left: 0;
+}
 
 .section-price-card:first-of-type, {
 	margin-left: 0;
