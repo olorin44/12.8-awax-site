@@ -123,10 +123,20 @@
 
 // styles for section price:
 
+.section-price-card:first-of-type, {
+	margin-left: 5%;
+}
+
+// styles for section price:
+
 .section-price-card {
 	border-radius: 15px;
 	margin-bottom: 20px;
-	margin-left: 0;
+	margin-left: 5%;
+}
+
+.section-price-table {
+	margin: 0;
 }
 
 //styles for section premium:

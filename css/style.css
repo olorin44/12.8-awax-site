@@ -102,6 +102,7 @@ body {
   background-color: #ededed;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
 
@@ -1041,10 +1042,16 @@ body {
     margin: 10px 10px 20px 10px;
     padding: .5%;
   }
+  .section-price-card:first-of-type {
+    margin-left: 5%;
+  }
   .section-price-card {
     border-radius: 15px;
     margin-bottom: 20px;
-    margin-left: 0;
+    margin-left: 5%;
+  }
+  .section-price-table {
+    margin: 0;
   }
   .section-premium h2 {
     font-size: 26px;
@@ -1202,7 +1209,7 @@ body {
     font-size: 20px;
   }
   .section-about-video video {
-    width: 100%;
+    width: 90%;
   }
   .section-projects h2 {
     font-size: 18px;
@@ -1232,6 +1239,9 @@ body {
     padding: 5px;
   }
   .section-logos img {
+    margin-left: 0;
+  }
+  .section-price-card {
     margin-left: 0;
   }
   .section-price-card:first-of-type {
