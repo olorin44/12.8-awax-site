@@ -68,12 +68,12 @@ body {
 
 .pagination {
 	display: inline-block;
-	margin-right: 2%;
 }
 
-.pagination li {
+.pagination div {
 	border: 2px solid $gold-color;
 	border-radius: 50%;
+	cursor: pointer;
 	display: inline-block;
 	list-style-type: none;
 	margin: 0 10px;

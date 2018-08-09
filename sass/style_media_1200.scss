@@ -93,6 +93,13 @@
 	right: 50px;
 }
 
+.section-home {
+	.pagination {
+		margin-top: 300px;
+		margin-left: 0;
+	}
+}
+
 //styles for section projects:
 
 .section-projects-slider .nav-links {
@@ -155,7 +162,7 @@
 
 #form-name, #form-email {
 	margin: 30px 15px 30px 15px;
-	width: 22%;
+	width: 23%;
 }
 
 //styles for section contacts-map:
