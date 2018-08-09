@@ -148,12 +148,12 @@ body {
 
 .pagination {
   display: inline-block;
-  margin-right: 2%;
 }
 
-.pagination li {
+.pagination div {
   border: 2px solid #b88b58;
   border-radius: 50%;
+  cursor: pointer;
   display: inline-block;
   list-style-type: none;
   margin: 0 10px;
@@ -161,12 +161,12 @@ body {
   transition: background-color .3s;
 }
 
-.pagination li:hover {
+.pagination div:hover {
   background-color: #b88b58;
   transition: .3s;
 }
 
-.pagination li:active {
+.pagination div:active {
   transform: scale(2);
 }
 
@@ -314,7 +314,7 @@ body {
 
 .section-home .pagination {
   margin-top: 160px;
-  margin-left: 55px;
+  margin-left: 4%;
 }
 
 .section-about {
@@ -569,7 +569,8 @@ body {
 }
 
 .section-clients .pagination {
-  margin: 80px 0 10px 20px;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .section-logos {
@@ -764,7 +765,7 @@ body {
   font-size: 40px;
   height: 65px;
   line-height: 65px;
-  margin-top: 90px;
+  margin-top: 100px;
   padding: 1%;
   text-align: center;
   width: 65px;
@@ -1026,6 +1027,10 @@ body {
     position: absolute;
     right: 50px;
   }
+  .section-home .pagination {
+    margin-top: 300px;
+    margin-left: 0;
+  }
   .section-projects-slider .nav-links li {
     border: 0;
   }
@@ -1061,7 +1066,7 @@ body {
   }
   #form-name, #form-email {
     margin: 30px 15px 30px 15px;
-    width: 22%;
+    width: 23%;
   }
   .section-contacts-map {
     font-size: 16px;
@@ -1203,6 +1208,7 @@ body {
     font-size: 24px;
   }
   .section-home .pagination {
+    margin-left: 0;
     margin-top: 80px;
   }
   .section-about h2 {
@@ -1219,6 +1225,10 @@ body {
   }
   .section-projects-slider .nav-links li {
     border: none;
+  }
+  .section-projects-gallery {
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .section-team h2 {
     font-size: 24px;
@@ -1264,9 +1274,10 @@ body {
     text-align: center;
     width: 100%;
   }
-  #form-name, #form-email {
-    margin: 30px 15px 30px 15px;
-    width: 22%;
+  #form-name, #form-email, #form-subject, #form-message {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
   .section-contacts h2 {
     font-size: 22px;
