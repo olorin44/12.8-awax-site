@@ -221,6 +221,12 @@ body {
 }
 
 .icons-pack {
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
   text-align: center;
 }
