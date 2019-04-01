@@ -104,6 +104,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 [class^="col-"] {
@@ -306,7 +307,7 @@ body {
 
 .section-home h1 {
   font-size: 72px;
-  line-height: .1em;
+  line-height: .25em;
 }
 
 .section-home h1.gold {
@@ -1309,7 +1310,10 @@ body {
   .section-footer form {
     border-radius: 10px;
     height: 95%;
-    width: 50%;
+    width: 65%;
+  }
+  .section-footer .long-btn {
+    width: 65%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,14 +4,14 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Page from PSD file">
-		<meta name="theme-color" content="#FFC720">
+		<meta name="theme-color" content="#b88b58">
 		<title>12.8-awax-site</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</head>
 	<body>
-		<section class="section-home">
+		<header class="section-home" id="home">
 			<div class="page-header">
 				<a href="#" class="company">
 					<img src="images/section-home-logo.png" alt="company logo">
@@ -23,15 +23,15 @@
 						<span></span>
 						<span></span>
 						<ul class="nav-links" id="menu">
-							<li><a href="#">HOME</a></li>
-							<li><a href="#">ABOUT US</a></li>
-							<li><a href="#">SERVICES</a></li>
-							<li><a href="#">OUR PROJECTS</a></li>
-							<li><a href="#">OUR TEAM</a></li>
-							<li><a href="#">HAPPY CLIENTS</a></li>
-							<li><a href="#">PRICE</a></li>
-							<li><a href="#">SOME FACTS</a></li>
-							<li><a href="#">CONTACT US</a></li>
+							<li><a href="#home">HOME</a></li>
+							<li><a href="#about">ABOUT US</a></li>
+							<li><a href="#services">SERVICES</a></li>
+							<li><a href="#projects">OUR PROJECTS</a></li>
+							<li><a href="#team">OUR TEAM</a></li>
+							<li><a href="#clients">HAPPY CLIENTS</a></li>
+							<li><a href="#price">PRICE</a></li>
+							<li><a href="#facts">SOME FACTS</a></li>
+							<li><a href="#contact">CONTACT US</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -48,8 +48,8 @@
 					<div><a href="#1"></a></div>
 				</div>
 			</div>
-		</section>
-		<section class="section-about">
+		</header>
+		<section class="section-about" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 section-title">
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-services">
+		<section class="section-services" id="services">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 section-title">
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-projects">
+		<section class="section-projects" id="projects">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 section-title">
@@ -222,7 +222,7 @@
 				<button class="long-btn">MORE PROJECTS</button>
 			</div>
 		</section>
-		<section class="section-team">
+		<section class="section-team" id="team">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 section-title">
@@ -279,9 +279,9 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-clients">
+		<section class="section-clients" id="clients">
 			<div class="container">
-				<div section-title">
+				<div class="section-title">
 					<h2>HAPPY CLIENTS</h2>
 					<p>CLIENT REVIEWS</p>
 					<img src="images/section-clients-photo1.png" alt="photo">
@@ -322,7 +322,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-price">
+		<section class="section-price" id="price">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 section-title">
@@ -447,7 +447,7 @@
 				<button class="long-btn">GET IN TOUCH</button>
 			</div>
 		</section>
-		<section class="section-facts">
+		<section class="section-facts" id="facts">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 section-title">
@@ -495,7 +495,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-contacts">
+		<section class="section-contacts" id="contact">
 			<div class="container">
 				<div class="section-title">
 					<h2>CONTACT US</h2>
@@ -538,10 +538,10 @@
 						</div>
 					</div>
 				</div>
-				<a href="#55"><i class="fas fa-chevron-up"></i></a>
+				<a href="#home"><i class="fas fa-chevron-up"></i></a>
 			</div>
 		</section>
-		<section class="section-footer">
+		<footer class="section-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-4 col-ms-6 col-s-12">
@@ -560,7 +560,7 @@
 					<div class="col-4 col-ms-6 col-s-12">
 						<form>
 							<div class="section-footer-form">
-								<input type="email" id="footer-email" placeholder="EMAIL TO SUBSCRIBE" minlength="6" required>
+								<input type="email" id="footer-email" placeholder="EMAIL TO SUBSCRIBE" minlength="10" required>
 							</div>
 							<span class="section-footer-horizontal-line"></span>
 							<button type="submit" class="long-btn">SUBSCRIBE</button>
@@ -568,6 +568,6 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</footer>
 	</body>
 </html>
